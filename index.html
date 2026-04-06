@@ -1,0 +1,238 @@
+<!doctype html>
+<!-- Declaración del tipo de documento: indica al navegador que es HTML5 -->
+
+<html lang="es">
+  <!-- Etiqueta raíz del documento; lang="es" indica que el contenido está en español -->
+
+  <head>
+    <!-- Sección de metadatos: no visible en pantalla, pero esencial para el navegador -->
+
+    <meta charset="UTF-8" />
+    <!-- Define la codificación UTF-8: permite tildes, ñ y símbolos especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Hace la página responsiva: adapta el ancho al dispositivo y escala inicial al 100% -->
+
+    <title>Mr Robot</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <!--Bootstrap/css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Carga Bootstrap 4.3.1 desde CDN -->
+    <!-- integrity: hash SHA para verificar que el archivo no fue alterado -->
+    <!-- crossorigin="anonymous": verifica sin enviar credenciales del usuario -->
+
+    <!--css/style.css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Estilos personalizados del proyecto -->
+    <!-- Siempre DESPUÉS de Bootstrap para poder sobrescribir sus estilos -->
+  </head>
+
+  <body>
+    <!-- Inicio del cuerpo: aquí va todo el contenido visible de la página -->
+
+    <!-- ==================== HEADER ==================== -->
+    <header>
+      <!-- Encabezado principal de la página -->
+
+      <h1 class="text-center" id="title">Mr Robot</h1>
+      <!-- h1: título principal; solo debe haber uno por página (buena práctica SEO) -->
+      <!-- text-center: clase Bootstrap que centra el texto horizontalmente -->
+      <!-- id="title": identificador único, usado como ancla para el enlace "back to top" -->
+      <!-- CORRECCIÓN: se reemplazó class="color" (clase inexistente) por class="text-center" -->
+    </header>
+
+    <!-- ==================== SECCIÓN 1: Synopsis ==================== -->
+    <section class="container my-4">
+      <!-- section: agrupa contenido temáticamente relacionado -->
+      <!-- container: clase Bootstrap que centra y limita el ancho del contenido -->
+      <!-- my-4: margen vertical (arriba y abajo) de Bootstrap, escala del 0 al 5 -->
+
+      <article class="post">
+        <!-- article: bloque de contenido independiente y reutilizable -->
+        <!-- post: clase personalizada definida en style.css para los artículos -->
+
+        <h2 class="texto">Synopsis</h2>
+        <!-- h2: subtítulo de sección; jerarquía correcta después del h1 -->
+        <!-- texto: clase personalizada para estilos de subtítulo -->
+
+        <p class="text">
+          <!-- p: párrafo de texto descriptivo -->
+          <!-- text: clase personalizada para estilos de párrafo con texto justificado -->
+          Elliot Alderson is a young man who works as a programmer by day and as
+          a hacker by night. A mysterious anarchist who calls himself Mr. Robot
+          asks him to join his group of hackers with the goal of destroying the
+          company he works for.
+        </p>
+
+        <img
+          src="img/mr_robot_1.png"
+          class="img-fluid d-block mx-auto"
+          alt="Synopsis"
+        />
+        <!-- img: muestra la imagen del artículo -->
+        <!-- src: ruta relativa hacia la carpeta img/ del proyecto -->
+        <!-- img-fluid: Bootstrap hace la imagen responsiva (max-width: 100%) -->
+        <!-- d-block: display block, la imagen ocupa su propia línea -->
+        <!-- mx-auto: margen horizontal automático, centra la imagen -->
+        <!-- alt: texto alternativo para accesibilidad y si la imagen no carga -->
+        <!-- CORRECCIÓN: se eliminó width="400" y se reemplazó por clases Bootstrap -->
+      </article>
+    </section>
+
+    <!-- ==================== SECCIÓN 2: Mr Robot ==================== -->
+    <section class="container my-4">
+      <article class="post">
+        <h2 class="texto">Mr Robot</h2>
+
+        <p class="text">
+          A fiction starring Rami Malek, winner of an Oscar for Best Actor for
+          'Bohemian Rhapsody', Mr. Robot is a technological thriller with 4
+          seasons and 46 episodes, inspired by other stories such as Blade
+          Runner, Fight Club, A Clockwork Orange, V for Vendetta, and The
+          Matrix, among others.
+        </p>
+
+        <img
+          src="img/mr_robot_2.png"
+          class="img-fluid d-block mx-auto"
+          alt="Mr Robot Info"
+        />
+        <!-- Esta sección tiene DOS párrafos: uno antes y uno después de la imagen -->
+        <!-- Esto es válido en HTML; el article puede contener múltiples párrafos e imágenes -->
+
+        <p class="text">
+          The story follows the life of Elliot Alderson, a young programmer with
+          social interaction issues, who works as a cybersecurity technician for
+          a major IT company during the day, and at night becomes a cyber
+          vigilante entangled in a dark plot.
+        </p>
+      </article>
+    </section>
+
+    <!-- ==================== SECCIÓN 3: Crítica ==================== -->
+    <section class="container my-4">
+      <article class="post">
+        <h2 class="texto">Mr Robot</h2>
+
+        <p class="text">
+          Mr. Robot truly stands out and solidifies itself as one of the great
+          works of television: its creative risk-taking, its genre-shifting, and
+          its mastery of the medium. This show pushes the boundaries of
+          television in a way I've never seen before, even among its
+          contemporaries of the Golden Age.
+        </p>
+
+        <img
+          src="img/mr_robot_3.png"
+          class="img-fluid d-block mx-auto"
+          alt="Creative Mastery"
+        />
+      </article>
+    </section>
+
+    <!-- ==================== SECCIÓN 4: Elliot ==================== -->
+    <section class="container my-4">
+      <article class="post">
+        <h2 class="texto">Mr Robot</h2>
+
+        <p class="text">
+          Elliot is mentally ill. He has dissociative identity disorder, which
+          used to be known as multiple personality disorder. So parts of himself
+          he's kind of fragmented into other people who he thinks he's talking
+          to or seeing.
+        </p>
+
+        <img
+          src="img/mr_robot_4.png"
+          class="img-fluid d-block mx-auto"
+          alt="Elliot"
+        />
+      </article>
+    </section>
+
+    <!-- ==================== SECCIÓN 5: Techno Thriller ==================== -->
+    <section class="container my-4">
+      <article class="post">
+        <h2 class="texto">Mr Robot</h2>
+
+        <p class="text">
+          "Mr. Robot," is a techno thriller that follows Elliot, a young
+          programmer, who works as a cyber-security engineer by day and as a
+          vigilante hacker by night.
+        </p>
+
+        <img
+          src="img/mr_robot_6.png"
+          class="img-fluid d-block mx-auto"
+          alt="Techno Thriller"
+        />
+        <!-- Nota: la imagen salta de mr_robot_4 a mr_robot_6 (no hay mr_robot_5 aquí) -->
+        <!-- Esto es válido siempre que el archivo exista con ese nombre exacto en la carpeta img/ -->
+      </article>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <!-- Pie de página con navegación y créditos -->
+
+      <section>
+        <!-- Agrupa los enlaces de navegación dentro del footer -->
+
+        <a href="#title">back to top</a>
+        <!-- href="#title": ancla que lleva al elemento con id="title" (el h1) -->
+
+        <a href="mailto:oramirezmg@gmail.com">contact me</a>
+        <!-- mailto: abre el cliente de correo con el destinatario prellenado -->
+      </section>
+
+      <p>copyright 2024</p>
+      <!-- Aviso de derechos de autor -->
+
+      <a target="_blank" href="https://mrrobot.fandom.com/wiki/Mr._Robot_Wiki">
+        visit mrrobot.fandom.com
+      </a>
+      <!-- target="_blank": abre el enlace en una nueva pestaña del navegador -->
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <!-- Los scripts van AL FINAL del body: el HTML carga primero, luego el JS -->
+
+    <!--jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery debe ir PRIMERO: Bootstrap y nuestro script.js dependen de él -->
+
+    <!--Bootstrap/popper-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.js: necesario para posicionar tooltips y dropdowns de Bootstrap -->
+
+    <!--Bootstrap/js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS: activa los componentes interactivos de Bootstrap -->
+    <!-- Orden obligatorio: jQuery → Popper → Bootstrap JS -->
+
+    <!-- js/script.js -->
+    <script src="js/script.js" type="text/javascript"></script>
+    <!-- Nuestro script personalizado siempre al último -->
+    <!-- Así puede usar jQuery y Bootstrap que ya cargaron antes -->
+  </body>
+  <!-- Fin del cuerpo del documento -->
+</html>
+<!-- Fin del documento HTML -->
